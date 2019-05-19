@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background: #3498db;
+  color: #2c3e50;
+}
+
+.btn-column,
+.btn-removeColumn,
+.btn-addCard,
+.btn-deleteCard {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn-removeColumn,
+.btn-addCard {
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  opacity: .6;
+}
+
+.btn-column {
+  color: #fff;
+  background: #2ecc71;
+  border-radius: 50%;
+  font-size: 24px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-column .fa-plus::before {
+  padding-right: 0px;
+}
+
+.btn-column:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn-removeColumn {
+  background: #e74c3c;
+}
+
+.btn-removeColumn:hover {
+  opacity: 1;
+}
+
+.btn-addCard {
+  background: #1abc9c;
+  margin-left: 10px;
+}
+
+.btn-addCard:hover {
+  opacity: 1;
+}
+
+.btn-deleteCard {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+.btn-deleteCard:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.fa-plus::before,
+.fa-times::before {
+  padding-right: 5px;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.column-container {
+  min-width: 250px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #bdc3c7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.column-header {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.column-title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: #d1d8e0;
+  margin: 15px 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: relative;
+  cursor: pointer;
+  transition: .4s;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  background: #95a5a6;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: .4s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover::before {
+  background: #2ecc71;
+}
+
+.card-cta {
+  text-align: right;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
